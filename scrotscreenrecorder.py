@@ -28,50 +28,50 @@ import os
 
 class ScrotScreenRecorder(object):
     helper = textwrap.dedent("""
-DESCRIPTION
-    scrot  is  a  screen  capture  utility using the imlib2 library to aquire
-    and save images.  scrot has a few options, detailed below. Specify [file]
-    as the filename to save the screenshot to.  If [file] is not specified, a
-    date-stamped file will be dropped in the current directory.
-
-OPTIONS
-       -h, --help
-            display help output and exit.
-
-       -v, --version
-            output version information and exit.
-
-       -b, --border
-            When selecting a window, grab wm border too
-
-       -c, --count
-            Display a countdown when used with delay.
-
-       -d, --delay NUM
-            Wait NUM seconds before taking a shot.
-
-       -e, --exec APP
-            Exec APP on the saved image.
-
-       -q, --quality NUM
-            Image quality (1-100) high value means high size, low compression. Default: 75.
-            (Effect differs depending on file format chosen).
-
-       -m, --multidisp
-            For multiple heads, grab shot from each and join them together.
-
-       -s, --select
-            Interactively select a window or rectangle with the mouse.
-
-       -u, --focused
-            Use the currently focused window.
-
-       -t, --thumb NUM
-            generate thumbnail too. NUM is the percentage of the original size for the thumbnail to be.
-
-       -z, --silent
-            prevent beeping.
-        """)
+        DESCRIPTION
+            scrot  is  a  screen  capture  utility using the imlib2 library to aquire
+            and save images.  scrot has a few options, detailed below. Specify [file]
+            as the filename to save the screenshot to.  If [file] is not specified, a
+            date-stamped file will be dropped in the current directory.
+        
+        OPTIONS
+               -h, --help
+                    display help output and exit.
+        
+               -v, --version
+                    output version information and exit.
+        
+               -b, --border
+                    When selecting a window, grab wm border too
+        
+               -c, --count
+                    Display a countdown when used with delay.
+        
+               -d, --delay NUM
+                    Wait NUM seconds before taking a shot.
+        
+               -e, --exec APP
+                    Exec APP on the saved image.
+        
+               -q, --quality NUM
+                    Image quality (1-100) high value means high size, low compression. Default: 75.
+                    (Effect differs depending on file format chosen).
+        
+               -m, --multidisp
+                    For multiple heads, grab shot from each and join them together.
+        
+               -s, --select
+                    Interactively select a window or rectangle with the mouse.
+        
+               -u, --focused
+                    Use the currently focused window.
+        
+               -t, --thumb NUM
+                    generate thumbnail too. NUM is the percentage of the original size for the thumbnail to be.
+        
+               -z, --silent
+                    prevent beeping.
+    """)
 
     def __init__(self):
         self.quality = None
